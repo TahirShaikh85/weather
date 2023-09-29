@@ -12,13 +12,15 @@
 </head>
 
 <body>
+    <!-- Error Message Placeholder -->
+    <div class="error-message"></div>
     <main class="main-area">
          <!-- Weather Info Section -->
         <section class="weather-info">
             <div class="container">
                 <div class="search-container">
                     <div class="searchBox">
-                        <input class="searchInput" type="text" name="" placeholder="Mumbai, India">
+                        <input class="searchInput" type="text" name="" placeholder="Mumbai, India -  Hit ⏎">
                         <button class="searchButton" href="#">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
@@ -42,13 +44,12 @@
                     </div>
                     <div class="current-temperature-status">Mostly cloudy</div>
                     <div class="dayInfo-container">
-                        <div class="date">28th july 2023</div>
-                        <div class="day-and-time"><span class="day">Friday</span><span class="time">12:44 PM</span>
-                        </div>
+                        <div class="date">29 September Friday</div>
+                        <div class="time">12:44 PM</div>
                         <div class="day-status">Day</div>
                     </div>
                     <div class="city-name">
-                        <h2>Mumbai</h2>
+                        <h2><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 5px;"></i> <span>Mumbai</span></h2>
                     </div>
                 </div>
             </div>
@@ -63,7 +64,7 @@
                         <h4>Wind</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="wind-report">4</span>Km/h</h3>
+                        <h3><span class="wind-speed-value">4 km/h</span></h3>
                     </div>
                     <div class="card-extra-info">
                         East
@@ -75,7 +76,7 @@
                         <h4>Humidity</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="humidity-report">69%</span></h3>
+                        <h3><span class="humidity-value">69%</span></h3>
                     </div>
                     <div class="card-extra-info">
 
@@ -87,7 +88,7 @@
                         <h4>Visibility</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="visibility-report">2.1</span>km</h3>
+                        <h3 class="visibility-value">2.1km</h3>
                     </div>
                     <div class="card-extra-info">
 
@@ -99,7 +100,7 @@
                         <h4>Pressure</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="pressure-report">1000</span>mb</h3>
+                        <h3><span class="pressure-value">1000</span></h3>
                     </div>
                     <div class="card-extra-info">
                     </div>
@@ -109,7 +110,7 @@
                         <h4>Weather</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="weather-report">Haze</h3>
+                        <h3 class="weather-value">Haze</h3>
                     </div>
                 </div>
                 <div class="card">
@@ -117,7 +118,7 @@
                         <h4>Min Temp</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="weather-report">36</span>&deg;C</h3>
+                        <h3><span class="mintemp-value">36°C</span></h3>
                     </div>
                 </div>
                 <div class="card">
@@ -125,7 +126,7 @@
                         <h4>Max Temp</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="weather-report">36</span>&deg;C</h3>
+                        <h3><span class="maxtemp-value">46°C</span></h3>
                     </div>
                 </div>
                 <div class="card">
@@ -134,7 +135,7 @@
                         <h4>Sunrise</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="sunrise-report">06:23</span></h3>
+                        <h3><span class="sunrise-value">06:23</span></h3>
                     </div>
                 </div>
                 <div class="card">
@@ -143,12 +144,12 @@
                         <h4>Sunset</h4>
                     </div>
                     <div class="card-info">
-                        <h3><span class="sunrise-report">18:30</span></h3>
+                        <h3><span class="sunset-value">18:30</span></h3>
                     </div>
                 </div>
             </div>
-
         </section>
+        
     </main>
 
      <!-- JavaScript -->

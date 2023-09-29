@@ -21,12 +21,24 @@ body {
     display: grid;
     grid-template-columns: 35% 75%;
     justify-content: center;
-    margin: 8rem !important;
+    margin: 4rem 8rem!important;
 }
 
 /* Weather Info Section */
 section.weather-info {
     background: #fff;
+}
+.error-message{
+    background: #e74c3c;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0.5rem 5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    display: none;
 }
 
 /* ------- search field --------------- */
@@ -96,7 +108,6 @@ section.weather-info {
 
 .weather-info .weather-container .current-weather-icon {
     width: 10rem;
-    margin-top: .5rem;
 }
 
 .weather-info .weather-container .current-temperature {
@@ -112,7 +123,6 @@ section.weather-info {
 .weather-info .weather-container .current-temperature .temperature-unit {
     font-size: 2.5rem;
     vertical-align: top;
-
 }
 
 .weather-info .weather-container .current-temperature .degree-symbol {
@@ -121,8 +131,9 @@ section.weather-info {
 }
 
 .weather-info .weather-container .current-temperature-status {
-    font-size: 85%;
+    font-size: 90%;
     margin-top: .2rem;
+    text-transform: capitalize;
 }
 
 .weather-info .weather-container .dayInfo-container {
@@ -134,13 +145,14 @@ section.weather-info {
 }
 
 .weather-info .weather-container .dayInfo-container .date {
-    font-size: 75%;
+    font-size: 85%;
     font-weight: bold;
+    line-height: 1.5rem;
 }
 
 .weather-info .weather-container .dayInfo-container .day-status {
     font-weight: bold;
-    opacity: .65;
+    opacity: .85;
 }
 
 .weather-info .weather-container .city-name h2 {
@@ -209,6 +221,9 @@ section.weather-info {
     font-size: 85%;
     letter-spacing: 1px;
 }
+.weather-data .card .card-info .weather-value{
+    text-transform: capitalize;
+}
 /* ---------- weather report --------- */
 
 
@@ -217,6 +232,14 @@ section.weather-info {
 @media (min-width:1600px) {
     .main-area {
         margin: 10rem 25rem !important;
+    }
+}
+@media (max-width:1025px) {
+    .main-area {
+        margin: 2rem 6rem!important;
+    }
+    .weather-info .weather-container .current-temperature .temperature-number {
+        font-size: 2.8rem;
     }
 }
 
