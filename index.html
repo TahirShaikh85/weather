@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"
+        integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="main-area">
+         <!-- Weather Info Section -->
+        <section class="weather-info">
+            <div class="container">
+                <div class="search-container">
+                    <div class="searchBox">
+                        <input class="searchInput" type="text" name="" placeholder="Mumbai, India">
+                        <button class="searchButton" href="#">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="temperature-unit-selector">
+                    <input type="radio" name="unit" id="celsius" value="celsius" checked>
+                    <label for="celsius">Celsius</label>
+
+                    <input type="radio" name="unit" id="fahrenheit" value="fahrenheit">
+                    <label for="fahrenheit">Fahrenheit</label>
+                </div>
+                <div class="weather-container">
+                    <div class="weather-icon">
+                        <img src="./assets/animated/01n.svg" alt="current weather icon" class="current-weather-icon">
+                    </div>
+                    <div class="current-temperature">
+                        <span class="temperature-number">31</span>
+                        <span class="degree-symbol">&deg;</span>
+                        <span class="temperature-unit">C</span>
+                    </div>
+                    <div class="current-temperature-status">Mostly cloudy</div>
+                    <div class="dayInfo-container">
+                        <div class="date">28th july 2023</div>
+                        <div class="day-and-time"><span class="day">Friday</span><span class="time">12:44 PM</span>
+                        </div>
+                        <div class="day-status">Day</div>
+                    </div>
+                    <div class="city-name">
+                        <h2>Mumbai</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Weather Data Section -->
+        <section class="weather-data">
+            <h2>Weather Report</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-heading">
+                        <img src="./assets/animated/wind-speed.svg" alt="wind-speed">
+                        <h4>Wind</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="wind-report">4</span>Km/h</h3>
+                    </div>
+                    <div class="card-extra-info">
+                        East
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img src="./assets/animated/humidity.svg" alt="humidity">
+                        <h4>Humidity</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="humidity-report">69%</span></h3>
+                    </div>
+                    <div class="card-extra-info">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img src="./assets/animated/visibility.svg" alt="humidity">
+                        <h4>Visibility</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="visibility-report">2.1</span>km</h3>
+                    </div>
+                    <div class="card-extra-info">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img src="./assets/animated/pressure.svg" alt="wind-speed">
+                        <h4>Pressure</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="pressure-report">1000</span>mb</h3>
+                    </div>
+                    <div class="card-extra-info">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <h4>Weather</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="weather-report">Haze</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <h4>Min Temp</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="weather-report">36</span>&deg;C</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <h4>Max Temp</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="weather-report">36</span>&deg;C</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img src="./assets/animated/sunrise.svg" alt="humidity">
+                        <h4>Sunrise</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="sunrise-report">06:23</span></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img src="./assets/animated/sunset.svg" alt="humidity">
+                        <h4>Sunset</h4>
+                    </div>
+                    <div class="card-info">
+                        <h3><span class="sunrise-report">18:30</span></h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+     <!-- JavaScript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

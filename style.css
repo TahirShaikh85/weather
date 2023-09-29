@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap');
+
+/* Reset and Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: rgb(211, 211, 211);
+}
+
+/* Main Layout */
+.main-area {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-columns: 35% 75%;
+    justify-content: center;
+    margin: 8rem !important;
+}
+
+/* Weather Info Section */
+section.weather-info {
+    background: #fff;
+}
+
+/* ------- search field --------------- */
+.weather-info .container .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.weather-info .container .searchBox {
+    background: #eeeeee;
+    height: 35px;
+    border-radius: 40px;
+
+}
+
+.weather-info .searchButton {
+    color: white;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.weather-info .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    width: 80%;
+    padding: 0 15px;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 33px;
+}
+
+/* ------- end search field --------------- */
+
+/* ------------ temperature unit selectors ----------- */
+.weather-info .temperature-unit-selector {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.weather-info .temperature-unit-selector input {
+    margin: 0 4px 0 15px;
+}
+
+/* ------------ end temperature unit selectors ----------- */
+
+/* ------- current weather information --------------- */
+.weather-info .weather-container {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info .weather-container .current-weather-icon {
+    width: 10rem;
+    margin-top: .5rem;
+}
+
+.weather-info .weather-container .current-temperature {
+    letter-spacing: -4px;
+}
+
+.weather-info .weather-container .current-temperature .temperature-number {
+    font-size: 3.5rem;
+    font-family: 'Lato', sans-serif;
+    opacity: .75;
+}
+
+.weather-info .weather-container .current-temperature .temperature-unit {
+    font-size: 2.5rem;
+    vertical-align: top;
+
+}
+
+.weather-info .weather-container .current-temperature .degree-symbol {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.weather-info .weather-container .current-temperature-status {
+    font-size: 85%;
+    margin-top: .2rem;
+}
+
+.weather-info .weather-container .dayInfo-container {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 2px solid gray;
+    margin-top: 2rem;
+    line-height: 1.3rem;
+}
+
+.weather-info .weather-container .dayInfo-container .date {
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.weather-info .weather-container .dayInfo-container .day-status {
+    font-weight: bold;
+    opacity: .65;
+}
+
+.weather-info .weather-container .city-name h2 {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    opacity: .75;
+    margin-bottom: 2.5rem;
+}
+
+/* ------- end current weather information --------------- */
+
+/* ---------- weather report --------- */
+.weather-data {
+    background: #eeeeee;
+    padding: 2rem;
+}
+
+.weather-data h2 {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.weather-data .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.weather-data .card {
+    flex-basis: calc(33.33% - 25px);
+    margin-bottom: 40px;
+    color: white;
+    border-radius: 15px;
+    background: #748CF1;
+    height: 8rem;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.weather-data .card .card-heading {
+    display: flex;
+}
+
+.weather-data .card .card-heading h4 {
+    color: #f0f8ff;
+    font-weight: normal;
+}
+
+.weather-data .card img {
+    width: 30px;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.weather-data .card h3 {
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+.weather-data .card h3 span {
+    margin-right: 6px;
+}
+
+.weather-data .card .card-extra-info {
+    margin: 10px 0;
+    font-size: 85%;
+    letter-spacing: 1px;
+}
+/* ---------- weather report --------- */
