@@ -210,3 +210,67 @@ section.weather-info {
     letter-spacing: 1px;
 }
 /* ---------- weather report --------- */
+
+
+/* Responsive Styles */
+
+@media (min-width:1600px) {
+    .main-area {
+        margin: 10rem 25rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .main-area {
+        margin: 0 !important;
+    }
+
+    .weather-info .weather-container {
+        padding: 0;
+    }
+
+    .weather-info .weather-container .current-weather-icon {
+        width: 7rem;
+        margin-top: 0;
+    }
+
+    .weather-info .weather-container .current-temperature .temperature-number {
+        font-size: 3.2rem;
+    }
+
+    .weather-info .weather-container .current-temperature .temperature-unit {
+        font-size: 2.2rem;
+    }
+
+    .weather-info .container .searchBox {
+        margin-left: 2.5rem;
+        width: 100%;
+    }
+
+    .weather-data .card {
+        flex-basis: calc(33.33% - 10px);
+        /* Adjust the width as needed */
+        margin-bottom: 30px;
+
+    }
+}
+
+@media (max-width:620px) {
+
+    .main-area {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-info .container .searchBox {
+        margin: 0 2.5rem;
+    }
+
+    .weather-info .weather-container .city-name h2 {
+        margin-top: 3rem;
+    }
+
+    .weather-data .card {
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
